@@ -53,6 +53,7 @@
             this.btSalvaSquadra.TabIndex = 0;
             this.btSalvaSquadra.Text = "Salva";
             this.btSalvaSquadra.UseVisualStyleBackColor = true;
+            this.btSalvaSquadra.Click += new System.EventHandler(this.btSalvaSquadra_Click);
             // 
             // tbNomeGiocatore1
             // 
