@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lvi = new System.Windows.Forms.ListView();
+            this.lviSquadre = new System.Windows.Forms.ListView();
             this.label5 = new System.Windows.Forms.Label();
             this.tbNomeSquadra = new System.Windows.Forms.TextBox();
             this.cdSquadra = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -119,19 +119,19 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Cognome";
             // 
-            // lvi
+            // lviSquadre
             // 
-            this.lvi.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lviSquadre.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.cdSquadra,
             this.cdGiocatore1,
             this.cdGiocatore2});
-            this.lvi.HideSelection = false;
-            this.lvi.Location = new System.Drawing.Point(36, 187);
-            this.lvi.Name = "lvi";
-            this.lvi.Size = new System.Drawing.Size(446, 251);
-            this.lvi.TabIndex = 9;
-            this.lvi.UseCompatibleStateImageBehavior = false;
-            this.lvi.View = System.Windows.Forms.View.Details;
+            this.lviSquadre.HideSelection = false;
+            this.lviSquadre.Location = new System.Drawing.Point(36, 187);
+            this.lviSquadre.Name = "lviSquadre";
+            this.lviSquadre.Size = new System.Drawing.Size(446, 251);
+            this.lviSquadre.TabIndex = 9;
+            this.lviSquadre.UseCompatibleStateImageBehavior = false;
+            this.lviSquadre.View = System.Windows.Forms.View.Details;
             // 
             // label5
             // 
@@ -171,7 +171,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbNomeSquadra);
-            this.Controls.Add(this.lvi);
+            this.Controls.Add(this.lviSquadre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -199,7 +199,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListView lvi;
+        private System.Windows.Forms.ListView lviSquadre;
         private System.Windows.Forms.ColumnHeader cdSquadra;
         private System.Windows.Forms.ColumnHeader cdGiocatore1;
         private System.Windows.Forms.ColumnHeader cdGiocatore2;

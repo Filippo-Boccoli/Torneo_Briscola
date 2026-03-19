@@ -25,7 +25,7 @@ namespace Torneo_Briscola
 
 
             setAll();
-            if(isAllSet())
+            if (isAllSet())
             {
                 //Assegnazioni
                 nomeGiocatore1 = tbNomeGiocatore1.Text;
@@ -33,6 +33,22 @@ namespace Torneo_Briscola
                 nomeGiocatore2 = tbNomeGiocatore2.Text;
                 cognomeGiocatore2 = tbCognomeGiocatore2.Text;
                 nomeSquadra = tbNomeSquadra.Text;
+
+                //Aggiungere alla Lista del program
+                Program.Squadra squadra;
+                Program.Giocatore giocatore1, giocatore2;
+                giocatore1.Nome = nomeGiocatore1;
+                giocatore1.Cognome = cognomeGiocatore1;
+                giocatore2.Nome = nomeGiocatore2;
+                giocatore2.Cognome = cognomeGiocatore2;
+                squadra.Nome = nomeSquadra;
+                squadra.Giocatore1 = giocatore1;
+                squadra.Giocatore2 = giocatore2;
+
+                Program.squadre.Add(squadra);
+
+                //Visualizza nella ListView
+                popolaListView();
 
                 //Salvataggio su db
 
@@ -48,9 +64,9 @@ namespace Torneo_Briscola
                 string.IsNullOrEmpty(tbCognomeGiocatore2.Text) ||
                 string.IsNullOrEmpty(tbNomeSquadra.Text)
                )
-                return true;
-            else
                 return false;
+            else
+                return true;
             
         }
 
@@ -62,6 +78,18 @@ namespace Torneo_Briscola
             tbCognomeGiocatore1.Text = "Rossi";
             tbCognomeGiocatore2.Text = "Giudilli";
             tbNomeSquadra.Text = "I 2 matti";
+        }
+
+        private void popolaListView()
+        {
+            ListViewItem lvi = new ListViewItem();
+            foreach (Program.Squadra squadra in Program.squadre)
+            {
+                lvi = new ListViewItem(squadra.Nome);
+                lvi.SubItems.Add(squadra.Giocatore1.Cognome);
+                lvi.SubItems.Add(squadra.Giocatore2.Cognome);
+            }
+            lviSquadre.Items.Add(lvi);            
         }
     }
 }
