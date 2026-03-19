@@ -43,6 +43,7 @@
             this.cdSquadra = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cdGiocatore1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cdGiocatore2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btCalcola = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btSalvaSquadra
@@ -164,11 +165,21 @@
             this.cdGiocatore2.Text = "Giocatore2";
             this.cdGiocatore2.Width = 93;
             // 
+            // btCalcola
+            // 
+            this.btCalcola.Location = new System.Drawing.Point(513, 308);
+            this.btCalcola.Name = "btCalcola";
+            this.btCalcola.Size = new System.Drawing.Size(105, 50);
+            this.btCalcola.TabIndex = 12;
+            this.btCalcola.Text = "Calcola";
+            this.btCalcola.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btCalcola);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbNomeSquadra);
             this.Controls.Add(this.lviSquadre);
@@ -205,6 +216,7 @@
         private System.Windows.Forms.ColumnHeader cdGiocatore2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbNomeSquadra;
+        private System.Windows.Forms.Button btCalcola;
     }
 }
 

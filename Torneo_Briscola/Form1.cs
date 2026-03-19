@@ -23,8 +23,8 @@ namespace Torneo_Briscola
             string nomeGiocatore2, cognomeGiocatore2;
             string nomeSquadra;
 
-
             setAll();
+
             if (isAllSet())
             {
                 //Assegnazioni
