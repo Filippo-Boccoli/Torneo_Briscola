@@ -38,11 +38,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lviSquadre = new System.Windows.Forms.ListView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbNomeSquadra = new System.Windows.Forms.TextBox();
             this.cdSquadra = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cdGiocatore1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cdGiocatore2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbNomeSquadra = new System.Windows.Forms.TextBox();
             this.btCalcola = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -134,6 +134,21 @@
             this.lviSquadre.UseCompatibleStateImageBehavior = false;
             this.lviSquadre.View = System.Windows.Forms.View.Details;
             // 
+            // cdSquadra
+            // 
+            this.cdSquadra.Text = "Squadra";
+            this.cdSquadra.Width = 80;
+            // 
+            // cdGiocatore1
+            // 
+            this.cdGiocatore1.Text = "Giocatore1";
+            this.cdGiocatore1.Width = 93;
+            // 
+            // cdGiocatore2
+            // 
+            this.cdGiocatore2.Text = "Giocatore2";
+            this.cdGiocatore2.Width = 93;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -149,21 +164,6 @@
             this.tbNomeSquadra.Name = "tbNomeSquadra";
             this.tbNomeSquadra.Size = new System.Drawing.Size(238, 22);
             this.tbNomeSquadra.TabIndex = 10;
-            // 
-            // cdSquadra
-            // 
-            this.cdSquadra.Text = "Squadra";
-            this.cdSquadra.Width = 80;
-            // 
-            // cdGiocatore1
-            // 
-            this.cdGiocatore1.Text = "Giocatore1";
-            this.cdGiocatore1.Width = 96;
-            // 
-            // cdGiocatore2
-            // 
-            this.cdGiocatore2.Text = "Giocatore2";
-            this.cdGiocatore2.Width = 93;
             // 
             // btCalcola
             // 

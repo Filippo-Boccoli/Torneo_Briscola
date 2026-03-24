@@ -23,7 +23,7 @@ namespace Torneo_Briscola
             string nomeGiocatore2, cognomeGiocatore2;
             string nomeSquadra;
 
-            setAll();
+            setAll(); //Momentanea
 
             if (isAllSet())
             {
@@ -47,13 +47,24 @@ namespace Torneo_Briscola
 
                 Program.squadre.Add(squadra);
 
+                //Salvataggio su db
+                if(Program.inserisciSquadra(squadra))
+                {
+                    unSetAll();
+                }
+
                 //Visualizza nella ListView
                 popolaListView();
 
-                //Salvataggio su db
 
             }
+            else
+            {
+                MessageBox.Show("Assicurati di aver inserito tutti i campi", "Attenzione", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        
 
         //Controlla se tutti i campi della form sono compilati
         private bool isAllSet()
@@ -80,6 +91,15 @@ namespace Torneo_Briscola
             tbNomeSquadra.Text = "I 2 matti";
         }
 
+        private void unSetAll()
+        {
+            tbNomeGiocatore1.Text = "";
+            tbNomeGiocatore2.Text = "";
+            tbCognomeGiocatore1.Text = "";
+            tbCognomeGiocatore2.Text = "";
+            tbNomeSquadra.Text = "";
+        }
+
         private void popolaListView()
         {
             ListViewItem lvi = new ListViewItem();
@@ -91,5 +111,6 @@ namespace Torneo_Briscola
             }
             lviSquadre.Items.Add(lvi);            
         }
+
     }
 }
