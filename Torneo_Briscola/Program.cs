@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using MySqlConnector;
+using System.Configuration;
 
 namespace Torneo_Briscola
 {
     static class Program
     {
-        static string connStr = "server=localhost;user=root;database=torneo_briscola;port=3306;password=root;";
+        static string connStr = "Server=127.0.0.1;Port=3306;User=root;Database=torneo_briscola;Password=root;SslMode=None;";
+
 
         /// <summary>
         /// Punto di ingresso principale dell'applicazione.
@@ -17,10 +19,10 @@ namespace Torneo_Briscola
         [STAThread]
         static void Main()
         {
+            squadre = caricaSquadre();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            squadre = caricaSquadre();
         }
 
         #region STRUTTURE DATI
@@ -105,9 +107,10 @@ namespace Torneo_Briscola
                 {
                     conn.Open();
 
-                    string query = "SELECT q.id, q.nome, q.cognome, s.nome " +
-                                   "FROM giocatori AS g " +
-                                   "JOIN squadre AS s ON g.squadra=s.ID;";
+                    string query = "SELECT squadre.nome AS nome_squadra, g1.nome AS nome_g1, g1.cognome AS cognome_g1, g2.nome AS nome_g2, g2.cognome AS cognome_g2 " +
+                                   "FROM squadre " +
+                                   "JOIN giocatori AS g1 ON squadre.giocatore1_id = g1.id " +
+                                   "JOIN giocatori AS g2 ON squadre.giocatore2_id = g2.id;";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 
@@ -115,9 +118,9 @@ namespace Torneo_Briscola
                     {
                         while (reader.Read())
                         {
-                            Giocatore giocatore1 = new Giocatore { Nome = (string)reader["nome"], Cognome = (string)reader["cognome"] };
-                            Giocatore giocatore2 = new Giocatore { Nome = (string)reader["nome"], Cognome = (string)reader["cognome"] };
-                            Squadra squadra = new Squadra { Giocatore1 = giocatore1, Giocatore2 = giocatore2 };
+                            Giocatore giocatore1 = new Giocatore { Nome = (string)reader["nome_g1"], Cognome = (string)reader["cognome_g1"] };
+                            Giocatore giocatore2 = new Giocatore { Nome = (string)reader["nome_g2"], Cognome = (string)reader["cognome_g2"] };
+                            Squadra squadra = new Squadra { Nome = (string)reader["nome_squadra"], Giocatore1 = giocatore1, Giocatore2 = giocatore2 };
                             squadre.Add(squadra);
                         }
                     }

@@ -126,6 +126,7 @@
             this.cdSquadra,
             this.cdGiocatore1,
             this.cdGiocatore2});
+            this.lviSquadre.FullRowSelect = true;
             this.lviSquadre.HideSelection = false;
             this.lviSquadre.Location = new System.Drawing.Point(36, 187);
             this.lviSquadre.Name = "lviSquadre";
@@ -194,6 +195,7 @@
             this.Controls.Add(this.btSalvaSquadra);
             this.Name = "Form1";
             this.Text = "Torneo di briscola";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

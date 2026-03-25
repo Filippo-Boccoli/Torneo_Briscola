@@ -102,15 +102,20 @@ namespace Torneo_Briscola
 
         private void popolaListView()
         {
+            lviSquadre.Items.Clear();
             ListViewItem lvi = new ListViewItem();
             foreach (Program.Squadra squadra in Program.squadre)
             {
                 lvi = new ListViewItem(squadra.Nome);
                 lvi.SubItems.Add(squadra.Giocatore1.Cognome);
                 lvi.SubItems.Add(squadra.Giocatore2.Cognome);
+                lviSquadre.Items.Add(lvi);            
             }
-            lviSquadre.Items.Add(lvi);            
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            popolaListView();
+        }
     }
 }
