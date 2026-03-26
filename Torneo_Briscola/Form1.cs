@@ -23,7 +23,7 @@ namespace Torneo_Briscola
             string nomeGiocatore2, cognomeGiocatore2;
             string nomeSquadra;
 
-            setAll(); //Momentanea
+            //setAll(); //Momentanea
 
             if (isAllSet())
             {
@@ -45,12 +45,12 @@ namespace Torneo_Briscola
                 squadra.Giocatore1 = giocatore1;
                 squadra.Giocatore2 = giocatore2;
 
-                Program.squadre.Add(squadra);
 
                 //Salvataggio su db
                 if(Program.inserisciSquadra(squadra))
                 {
                     unSetAll();
+                    Program.squadre = Program.caricaSquadre();
                 }
 
                 //Visualizza nella ListView
@@ -60,7 +60,7 @@ namespace Torneo_Briscola
             }
             else
             {
-                MessageBox.Show("Assicurati di aver inserito tutti i campi", "Attenzione", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Assicurati di aver inserito tutti i campi", "Attenzione", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -72,8 +72,7 @@ namespace Torneo_Briscola
             if (string.IsNullOrEmpty(tbNomeGiocatore1.Text) ||
                 string.IsNullOrEmpty(tbNomeGiocatore2.Text) ||
                 string.IsNullOrEmpty(tbCognomeGiocatore1.Text) ||
-                string.IsNullOrEmpty(tbCognomeGiocatore2.Text) ||
-                string.IsNullOrEmpty(tbNomeSquadra.Text)
+                string.IsNullOrEmpty(tbCognomeGiocatore2.Text)
                )
                 return false;
             else

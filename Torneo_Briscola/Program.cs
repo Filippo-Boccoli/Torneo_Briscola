@@ -44,19 +44,46 @@ namespace Torneo_Briscola
         //Variabili per tutto il programma
         public static List<Squadra> squadre = new List<Squadra>();
 
+        //Metodi BL per il DataBase
         public static bool inserisciSquadra(Squadra squadra)
         {
+            int idGiocatore1, idGiocatore2;
+
+            idGiocatore1 = inserisciGiocatore(squadra.Giocatore1);
+            idGiocatore2 = inserisciGiocatore(squadra.Giocatore2);
+
+            string query_name = "INSERT INTO squadre (nome, giocatore1_id, giocatore2_id) VALUES (@nome, @giocatore1_id, @giocatore2_id);";
+
+            string query_empty_name = "INSERT INTO squadre (nome, giocatore1_id, giocatore2_id) VALUES (@nome, @giocatore1_id, @giocatore2_id); " +
+                                      "UPDATE squadre " +
+                                      "SET nome = CONCAT('squadra_', id) " +
+                                      "WHERE id = LAST_INSERT_ID();";
+
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try
                 {
                     conn.Open();
 
-                    string query = "INSERT INTO squadre (nome) VALUES (@nome)";
+                    //rendo la query dinamica così che accetti sia il nome di una squadra sia nessun nome
+
+                    string query = "";
+                    if (!string.IsNullOrEmpty(squadra.Nome))
+                    {
+                        query = query_name;
+                        
+                    }
+                    else
+                    {
+                        query = query_empty_name;
+                        squadra.Nome = "temp";
+                    }
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 
                     cmd.Parameters.AddWithValue("@nome", squadra.Nome);
+                    cmd.Parameters.AddWithValue("@giocatore1_id", idGiocatore1);
+                    cmd.Parameters.AddWithValue("@giocatore2_id", idGiocatore2);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -65,39 +92,41 @@ namespace Torneo_Briscola
                     MessageBox.Show("Errore: " + ex.Message);
                 }
 
-                return false;
+                return true;
             }            
         }
 
-        private static bool inserisciGiocatore(Giocatore giocatore, int IDsquadra)
+        private static int inserisciGiocatore(Giocatore giocatore)
         {
+            int ID_giocatore = -1;
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try
                 {
                     conn.Open();
 
-                    string query = "INSERT INTO giocatori (nome, cognome, squadra) VALUES (@nome, @cognome, @squadra)";
+                    string query = "INSERT INTO giocatori (nome, cognome) VALUES (@nome, @cognome)";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 
                     cmd.Parameters.AddWithValue("@nome", giocatore.Nome);
                     cmd.Parameters.AddWithValue("@cognome", giocatore.Cognome);
-                    cmd.Parameters.AddWithValue("@squadra", IDsquadra);
 
                     cmd.ExecuteNonQuery();
+
+                    ID_giocatore = (int)cmd.LastInsertedId;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Errore: " + ex.Message);
                 }
 
-                return false;
+                return ID_giocatore;
             }
         }
 
-        //Carica le squadre dal database
-        private static List<Squadra> caricaSquadre()
+        //Carica tutte le squadre dal database 
+        public static List<Squadra> caricaSquadre()
         {
             List<Squadra> squadre = new List<Squadra>();
 
