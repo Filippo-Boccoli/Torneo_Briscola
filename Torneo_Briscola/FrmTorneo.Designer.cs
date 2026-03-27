@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.cbSquadra1 = new System.Windows.Forms.ComboBox();
             this.cbSquadra2 = new System.Windows.Forms.ComboBox();
             this.cbSquadra4 = new System.Windows.Forms.ComboBox();
@@ -92,12 +91,10 @@
             this.cbSquadra4_1 = new System.Windows.Forms.ComboBox();
             this.cbSquadra4_2 = new System.Windows.Forms.ComboBox();
             this.cbVincitore = new System.Windows.Forms.ComboBox();
-            this.tmrVittoria = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // cbSquadra1
             // 
-            this.cbSquadra1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1.FormattingEnabled = true;
             this.cbSquadra1.Location = new System.Drawing.Point(13, 13);
             this.cbSquadra1.Name = "cbSquadra1";
@@ -107,7 +104,6 @@
             // 
             // cbSquadra2
             // 
-            this.cbSquadra2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2.FormattingEnabled = true;
             this.cbSquadra2.Location = new System.Drawing.Point(13, 45);
             this.cbSquadra2.Name = "cbSquadra2";
@@ -117,7 +113,6 @@
             // 
             // cbSquadra4
             // 
-            this.cbSquadra4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra4.FormattingEnabled = true;
             this.cbSquadra4.Location = new System.Drawing.Point(13, 126);
             this.cbSquadra4.Name = "cbSquadra4";
@@ -127,7 +122,6 @@
             // 
             // cbSquadra3
             // 
-            this.cbSquadra3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra3.FormattingEnabled = true;
             this.cbSquadra3.Location = new System.Drawing.Point(13, 94);
             this.cbSquadra3.Name = "cbSquadra3";
@@ -137,7 +131,6 @@
             // 
             // cbSquadra8
             // 
-            this.cbSquadra8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra8.FormattingEnabled = true;
             this.cbSquadra8.Location = new System.Drawing.Point(13, 292);
             this.cbSquadra8.Name = "cbSquadra8";
@@ -147,7 +140,6 @@
             // 
             // cbSquadra7
             // 
-            this.cbSquadra7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra7.FormattingEnabled = true;
             this.cbSquadra7.Location = new System.Drawing.Point(13, 260);
             this.cbSquadra7.Name = "cbSquadra7";
@@ -157,7 +149,6 @@
             // 
             // cbSquadra6
             // 
-            this.cbSquadra6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra6.FormattingEnabled = true;
             this.cbSquadra6.Location = new System.Drawing.Point(13, 211);
             this.cbSquadra6.Name = "cbSquadra6";
@@ -167,7 +158,6 @@
             // 
             // cbSquadra5
             // 
-            this.cbSquadra5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra5.FormattingEnabled = true;
             this.cbSquadra5.Location = new System.Drawing.Point(13, 179);
             this.cbSquadra5.Name = "cbSquadra5";
@@ -177,7 +167,6 @@
             // 
             // cbSquadra16
             // 
-            this.cbSquadra16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra16.FormattingEnabled = true;
             this.cbSquadra16.Location = new System.Drawing.Point(13, 619);
             this.cbSquadra16.Name = "cbSquadra16";
@@ -187,7 +176,6 @@
             // 
             // cbSquadra15
             // 
-            this.cbSquadra15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra15.FormattingEnabled = true;
             this.cbSquadra15.Location = new System.Drawing.Point(13, 587);
             this.cbSquadra15.Name = "cbSquadra15";
@@ -197,7 +185,6 @@
             // 
             // cbSquadra14
             // 
-            this.cbSquadra14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra14.FormattingEnabled = true;
             this.cbSquadra14.Location = new System.Drawing.Point(13, 538);
             this.cbSquadra14.Name = "cbSquadra14";
@@ -207,7 +194,6 @@
             // 
             // cbSquadra13
             // 
-            this.cbSquadra13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra13.FormattingEnabled = true;
             this.cbSquadra13.Location = new System.Drawing.Point(13, 506);
             this.cbSquadra13.Name = "cbSquadra13";
@@ -217,7 +203,6 @@
             // 
             // cbSquadra12
             // 
-            this.cbSquadra12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra12.FormattingEnabled = true;
             this.cbSquadra12.Location = new System.Drawing.Point(13, 453);
             this.cbSquadra12.Name = "cbSquadra12";
@@ -227,7 +212,6 @@
             // 
             // cbSquadra11
             // 
-            this.cbSquadra11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra11.FormattingEnabled = true;
             this.cbSquadra11.Location = new System.Drawing.Point(13, 421);
             this.cbSquadra11.Name = "cbSquadra11";
@@ -237,7 +221,6 @@
             // 
             // cbSquadra10
             // 
-            this.cbSquadra10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra10.FormattingEnabled = true;
             this.cbSquadra10.Location = new System.Drawing.Point(13, 372);
             this.cbSquadra10.Name = "cbSquadra10";
@@ -247,7 +230,6 @@
             // 
             // cbSquadra9
             // 
-            this.cbSquadra9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra9.FormattingEnabled = true;
             this.cbSquadra9.Location = new System.Drawing.Point(13, 340);
             this.cbSquadra9.Name = "cbSquadra9";
@@ -257,7 +239,6 @@
             // 
             // cbSquadra31
             // 
-            this.cbSquadra31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra31.FormattingEnabled = true;
             this.cbSquadra31.Location = new System.Drawing.Point(1360, 587);
             this.cbSquadra31.Name = "cbSquadra31";
@@ -267,7 +248,6 @@
             // 
             // cbSquadra30
             // 
-            this.cbSquadra30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra30.FormattingEnabled = true;
             this.cbSquadra30.Location = new System.Drawing.Point(1360, 538);
             this.cbSquadra30.Name = "cbSquadra30";
@@ -277,7 +257,6 @@
             // 
             // cbSquadra29
             // 
-            this.cbSquadra29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra29.FormattingEnabled = true;
             this.cbSquadra29.Location = new System.Drawing.Point(1360, 506);
             this.cbSquadra29.Name = "cbSquadra29";
@@ -287,7 +266,6 @@
             // 
             // cbSquadra28
             // 
-            this.cbSquadra28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra28.FormattingEnabled = true;
             this.cbSquadra28.Location = new System.Drawing.Point(1360, 452);
             this.cbSquadra28.Name = "cbSquadra28";
@@ -297,7 +275,6 @@
             // 
             // cbSquadra3_4
             // 
-            this.cbSquadra3_4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra3_4.FormattingEnabled = true;
             this.cbSquadra3_4.Location = new System.Drawing.Point(954, 484);
             this.cbSquadra3_4.Name = "cbSquadra3_4";
@@ -307,7 +284,6 @@
             // 
             // cbSquadra27
             // 
-            this.cbSquadra27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra27.FormattingEnabled = true;
             this.cbSquadra27.Location = new System.Drawing.Point(1360, 420);
             this.cbSquadra27.Name = "cbSquadra27";
@@ -317,7 +293,6 @@
             // 
             // cbSquadra26
             // 
-            this.cbSquadra26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra26.FormattingEnabled = true;
             this.cbSquadra26.Location = new System.Drawing.Point(1360, 371);
             this.cbSquadra26.Name = "cbSquadra26";
@@ -327,7 +302,6 @@
             // 
             // cbSquadra25
             // 
-            this.cbSquadra25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra25.FormattingEnabled = true;
             this.cbSquadra25.Location = new System.Drawing.Point(1360, 339);
             this.cbSquadra25.Name = "cbSquadra25";
@@ -337,7 +311,6 @@
             // 
             // cbSquadra24
             // 
-            this.cbSquadra24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra24.FormattingEnabled = true;
             this.cbSquadra24.Location = new System.Drawing.Point(1360, 291);
             this.cbSquadra24.Name = "cbSquadra24";
@@ -347,7 +320,6 @@
             // 
             // cbSquadra23
             // 
-            this.cbSquadra23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra23.FormattingEnabled = true;
             this.cbSquadra23.Location = new System.Drawing.Point(1360, 259);
             this.cbSquadra23.Name = "cbSquadra23";
@@ -357,7 +329,6 @@
             // 
             // cbSquadra22
             // 
-            this.cbSquadra22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra22.FormattingEnabled = true;
             this.cbSquadra22.Location = new System.Drawing.Point(1360, 210);
             this.cbSquadra22.Name = "cbSquadra22";
@@ -367,7 +338,6 @@
             // 
             // cbSquadra21
             // 
-            this.cbSquadra21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra21.FormattingEnabled = true;
             this.cbSquadra21.Location = new System.Drawing.Point(1360, 178);
             this.cbSquadra21.Name = "cbSquadra21";
@@ -377,7 +347,6 @@
             // 
             // cbSquadra20
             // 
-            this.cbSquadra20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra20.FormattingEnabled = true;
             this.cbSquadra20.Location = new System.Drawing.Point(1360, 125);
             this.cbSquadra20.Name = "cbSquadra20";
@@ -387,7 +356,6 @@
             // 
             // cbSquadra19
             // 
-            this.cbSquadra19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra19.FormattingEnabled = true;
             this.cbSquadra19.Location = new System.Drawing.Point(1360, 93);
             this.cbSquadra19.Name = "cbSquadra19";
@@ -397,7 +365,6 @@
             // 
             // cbSquadra18
             // 
-            this.cbSquadra18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra18.FormattingEnabled = true;
             this.cbSquadra18.Location = new System.Drawing.Point(1360, 44);
             this.cbSquadra18.Name = "cbSquadra18";
@@ -407,7 +374,6 @@
             // 
             // cbSquadra17
             // 
-            this.cbSquadra17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra17.FormattingEnabled = true;
             this.cbSquadra17.Location = new System.Drawing.Point(1360, 12);
             this.cbSquadra17.Name = "cbSquadra17";
@@ -417,7 +383,6 @@
             // 
             // cbSquadra1_1
             // 
-            this.cbSquadra1_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_1.FormattingEnabled = true;
             this.cbSquadra1_1.Location = new System.Drawing.Point(155, 31);
             this.cbSquadra1_1.Name = "cbSquadra1_1";
@@ -427,7 +392,6 @@
             // 
             // cbSquadra1_2
             // 
-            this.cbSquadra1_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_2.FormattingEnabled = true;
             this.cbSquadra1_2.Location = new System.Drawing.Point(155, 111);
             this.cbSquadra1_2.Name = "cbSquadra1_2";
@@ -437,7 +401,6 @@
             // 
             // cbSquadra1_4
             // 
-            this.cbSquadra1_4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_4.FormattingEnabled = true;
             this.cbSquadra1_4.Location = new System.Drawing.Point(155, 276);
             this.cbSquadra1_4.Name = "cbSquadra1_4";
@@ -447,7 +410,6 @@
             // 
             // cbSquadra1_3
             // 
-            this.cbSquadra1_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_3.FormattingEnabled = true;
             this.cbSquadra1_3.Location = new System.Drawing.Point(155, 196);
             this.cbSquadra1_3.Name = "cbSquadra1_3";
@@ -457,7 +419,6 @@
             // 
             // cbSquadra1_8
             // 
-            this.cbSquadra1_8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_8.FormattingEnabled = true;
             this.cbSquadra1_8.Location = new System.Drawing.Point(155, 601);
             this.cbSquadra1_8.Name = "cbSquadra1_8";
@@ -467,7 +428,6 @@
             // 
             // cbSquadra1_7
             // 
-            this.cbSquadra1_7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_7.FormattingEnabled = true;
             this.cbSquadra1_7.Location = new System.Drawing.Point(155, 521);
             this.cbSquadra1_7.Name = "cbSquadra1_7";
@@ -477,7 +437,6 @@
             // 
             // cbSquadra1_6
             // 
-            this.cbSquadra1_6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_6.FormattingEnabled = true;
             this.cbSquadra1_6.Location = new System.Drawing.Point(155, 436);
             this.cbSquadra1_6.Name = "cbSquadra1_6";
@@ -487,7 +446,6 @@
             // 
             // cbSquadra1_5
             // 
-            this.cbSquadra1_5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_5.FormattingEnabled = true;
             this.cbSquadra1_5.Location = new System.Drawing.Point(155, 356);
             this.cbSquadra1_5.Name = "cbSquadra1_5";
@@ -497,7 +455,6 @@
             // 
             // cbSquadra2_8
             // 
-            this.cbSquadra2_8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_8.FormattingEnabled = true;
             this.cbSquadra2_8.Location = new System.Drawing.Point(1090, 561);
             this.cbSquadra2_8.Name = "cbSquadra2_8";
@@ -507,7 +464,6 @@
             // 
             // cbSquadra2_7
             // 
-            this.cbSquadra2_7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_7.FormattingEnabled = true;
             this.cbSquadra2_7.Location = new System.Drawing.Point(1090, 400);
             this.cbSquadra2_7.Name = "cbSquadra2_7";
@@ -517,7 +473,6 @@
             // 
             // cbSquadra2_6
             // 
-            this.cbSquadra2_6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_6.FormattingEnabled = true;
             this.cbSquadra2_6.Location = new System.Drawing.Point(1090, 245);
             this.cbSquadra2_6.Name = "cbSquadra2_6";
@@ -527,7 +482,6 @@
             // 
             // cbSquadra2_5
             // 
-            this.cbSquadra2_5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_5.FormattingEnabled = true;
             this.cbSquadra2_5.Location = new System.Drawing.Point(1090, 54);
             this.cbSquadra2_5.Name = "cbSquadra2_5";
@@ -537,7 +491,6 @@
             // 
             // cbSquadra1_16
             // 
-            this.cbSquadra1_16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_16.FormattingEnabled = true;
             this.cbSquadra1_16.Location = new System.Drawing.Point(1233, 601);
             this.cbSquadra1_16.Name = "cbSquadra1_16";
@@ -547,7 +500,6 @@
             // 
             // cbSquadra1_15
             // 
-            this.cbSquadra1_15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_15.FormattingEnabled = true;
             this.cbSquadra1_15.Location = new System.Drawing.Point(1233, 521);
             this.cbSquadra1_15.Name = "cbSquadra1_15";
@@ -557,7 +509,6 @@
             // 
             // cbSquadra1_14
             // 
-            this.cbSquadra1_14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_14.FormattingEnabled = true;
             this.cbSquadra1_14.Location = new System.Drawing.Point(1233, 436);
             this.cbSquadra1_14.Name = "cbSquadra1_14";
@@ -567,7 +518,6 @@
             // 
             // cbSquadra1_13
             // 
-            this.cbSquadra1_13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_13.FormattingEnabled = true;
             this.cbSquadra1_13.Location = new System.Drawing.Point(1233, 356);
             this.cbSquadra1_13.Name = "cbSquadra1_13";
@@ -577,7 +527,6 @@
             // 
             // cbSquadra2_1
             // 
-            this.cbSquadra2_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_1.FormattingEnabled = true;
             this.cbSquadra2_1.Location = new System.Drawing.Point(296, 72);
             this.cbSquadra2_1.Name = "cbSquadra2_1";
@@ -587,7 +536,6 @@
             // 
             // cbSquadra2_2
             // 
-            this.cbSquadra2_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_2.FormattingEnabled = true;
             this.cbSquadra2_2.Location = new System.Drawing.Point(296, 245);
             this.cbSquadra2_2.Name = "cbSquadra2_2";
@@ -597,7 +545,6 @@
             // 
             // cbSquadra2_4
             // 
-            this.cbSquadra2_4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_4.FormattingEnabled = true;
             this.cbSquadra2_4.Location = new System.Drawing.Point(296, 561);
             this.cbSquadra2_4.Name = "cbSquadra2_4";
@@ -607,7 +554,6 @@
             // 
             // cbSquadra2_3
             // 
-            this.cbSquadra2_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_3.FormattingEnabled = true;
             this.cbSquadra2_3.Location = new System.Drawing.Point(296, 401);
             this.cbSquadra2_3.Name = "cbSquadra2_3";
@@ -617,7 +563,6 @@
             // 
             // cbSquadra1_12
             // 
-            this.cbSquadra1_12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_12.FormattingEnabled = true;
             this.cbSquadra1_12.Location = new System.Drawing.Point(1233, 276);
             this.cbSquadra1_12.Name = "cbSquadra1_12";
@@ -627,7 +572,6 @@
             // 
             // cbSquadra1_11
             // 
-            this.cbSquadra1_11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_11.FormattingEnabled = true;
             this.cbSquadra1_11.Location = new System.Drawing.Point(1233, 196);
             this.cbSquadra1_11.Name = "cbSquadra1_11";
@@ -637,7 +581,6 @@
             // 
             // cbSquadra1_10
             // 
-            this.cbSquadra1_10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_10.FormattingEnabled = true;
             this.cbSquadra1_10.Location = new System.Drawing.Point(1233, 111);
             this.cbSquadra1_10.Name = "cbSquadra1_10";
@@ -647,7 +590,6 @@
             // 
             // cbSquadra1_9
             // 
-            this.cbSquadra1_9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra1_9.FormattingEnabled = true;
             this.cbSquadra1_9.Location = new System.Drawing.Point(1233, 13);
             this.cbSquadra1_9.Name = "cbSquadra1_9";
@@ -657,7 +599,6 @@
             // 
             // cbSquadra3_3
             // 
-            this.cbSquadra3_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra3_3.FormattingEnabled = true;
             this.cbSquadra3_3.Location = new System.Drawing.Point(954, 151);
             this.cbSquadra3_3.Name = "cbSquadra3_3";
@@ -667,7 +608,6 @@
             // 
             // cbSquadra32
             // 
-            this.cbSquadra32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra32.FormattingEnabled = true;
             this.cbSquadra32.Location = new System.Drawing.Point(1360, 619);
             this.cbSquadra32.Name = "cbSquadra32";
@@ -677,7 +617,6 @@
             // 
             // cbSquadra3_2
             // 
-            this.cbSquadra3_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra3_2.FormattingEnabled = true;
             this.cbSquadra3_2.Location = new System.Drawing.Point(426, 484);
             this.cbSquadra3_2.Name = "cbSquadra3_2";
@@ -687,7 +626,6 @@
             // 
             // cbSquadra3_1
             // 
-            this.cbSquadra3_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra3_1.FormattingEnabled = true;
             this.cbSquadra3_1.Location = new System.Drawing.Point(426, 151);
             this.cbSquadra3_1.Name = "cbSquadra3_1";
@@ -697,7 +635,6 @@
             // 
             // cbSquadra4_1
             // 
-            this.cbSquadra4_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra4_1.FormattingEnabled = true;
             this.cbSquadra4_1.Location = new System.Drawing.Point(558, 306);
             this.cbSquadra4_1.Name = "cbSquadra4_1";
@@ -707,7 +644,6 @@
             // 
             // cbSquadra4_2
             // 
-            this.cbSquadra4_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra4_2.FormattingEnabled = true;
             this.cbSquadra4_2.Location = new System.Drawing.Point(814, 306);
             this.cbSquadra4_2.Name = "cbSquadra4_2";
@@ -725,11 +661,6 @@
             this.cbVincitore.Size = new System.Drawing.Size(147, 56);
             this.cbVincitore.TabIndex = 64;
             this.cbVincitore.SelectedIndexChanged += new System.EventHandler(this.cbVincitore_SelectedIndexChanged);
-            // 
-            // tmrVittoria
-            // 
-            this.tmrVittoria.Interval = 2500;
-            this.tmrVittoria.Tick += new System.EventHandler(this.tmrVittoria_Tick);
             // 
             // FrmTorneo
             // 
@@ -873,6 +804,5 @@
         private System.Windows.Forms.ComboBox cbSquadra4_1;
         private System.Windows.Forms.ComboBox cbSquadra4_2;
         private System.Windows.Forms.ComboBox cbVincitore;
-        private System.Windows.Forms.Timer tmrVittoria;
     }
 }

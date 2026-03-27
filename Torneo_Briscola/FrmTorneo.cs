@@ -47,17 +47,17 @@ namespace Torneo_Briscola
         //carico nelle combo box iniziali tutte le squadre in base alla lista delle squadre mischiate 
         private void CaricaSquadreIniziali()
         {
-            for (int i = 0; i < squadreMischiate.Count; i++)
+            for (int i = 0; i < 32; i++)
             {
                 ComboBox cbSquadra = (ComboBox)this.Controls["cbSquadra" + (i + 1)];
-                if (squadreMischiate[i].Nome == null)
+                for (int j = 0; j < squadreMischiate.Count; j++)
                 {
-                    Program.Squadra nuovaSquadra = new Program.Squadra();
-                    nuovaSquadra.Nome = "fantasma";
-                    squadreMischiate.Add(nuovaSquadra);
+                    cbSquadra.Items.Add(squadreMischiate[j].Giocatore1.Cognome + "-" + squadreMischiate[j].Giocatore2.Cognome);
                 }
-                cbSquadra.Items.Add(squadreMischiate[i].Giocatore1.Cognome + "-" + squadreMischiate[i].Giocatore2.Cognome);
-                cbSquadra.SelectedIndex = 0; 
+                if(squadreMischiate.Count > i)
+                    cbSquadra.SelectedIndex = i;
+                else
+                    cbSquadra.SelectedIndex = -1;
             }
         }
         //quando si seleziona due vincitori mi si caricano le squadre nella combox per il turno successivo
@@ -238,23 +238,16 @@ namespace Torneo_Briscola
             //tmrVittoria.Start();
         }
 
-        private void tmrVittoria_Tick(object sender, EventArgs e)
-        {
-            //pbVittoria.Visible = false;
-            //lblSquadraVincente.Visible = false;
-            //tmrVittoria.Stop();
-        }
-
         private void cbSquadra_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cb = (ComboBox)sender;
-            //ComboBox cbSquadra = (ComboBox)this.Controls["cbSquadra" + (i + 1)];
             int numCb = Convert.ToInt32(cb.Name.Replace("cbSquadra", ""));
             if (numCb % 2 == 0)
             {
                 ComboBox cbSquadraAvversaria = (ComboBox)this.Controls["cbSquadra" + (numCb - 1)];
 
                 ComboBox cbSquadraSuccessiva = (ComboBox)this.Controls["cbSquadra1_" + (numCb / 2)];
+                cbSquadraSuccessiva.Items.Clear();
                 cbSquadraSuccessiva.Items.Add(cb.Text);
                 cbSquadraSuccessiva.Items.Add(cbSquadraAvversaria.Text);
 
