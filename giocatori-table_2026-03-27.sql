@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Creato il: Mar 26, 2026 alle 21:09
+-- Creato il: Mar 27, 2026 alle 16:01
 -- Versione del server: 8.2.0
 -- Versione PHP: 8.3.0
 
@@ -38,28 +38,50 @@ CREATE TABLE `giocatori` (
 --
 
 INSERT INTO `giocatori` (`id`, `nome`, `cognome`) VALUES
-(25, 'ivan', 'silvestrini'),
-(26, 'alessandro', 'aquili');
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `squadre`
---
-
-CREATE TABLE `squadre` (
-  `id` int NOT NULL,
-  `nome` varchar(100) DEFAULT NULL,
-  `giocatore1_id` int DEFAULT NULL,
-  `giocatore2_id` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dump dei dati per la tabella `squadre`
---
-
-INSERT INTO `squadre` (`id`, `nome`, `giocatore1_id`, `giocatore2_id`) VALUES
-(37, 'Borghettari', 25, 26);
+(33, 'sofia', 'burattini'),
+(34, 'sofia', 'carlini'),
+(35, 'nicola', 'cardinaletti'),
+(36, 'pietro', 'quattrini'),
+(37, 'francesco', 'catalani'),
+(38, 'nicolas', 'tasquier'),
+(39, 'filippo', 'faini'),
+(40, 'omar', 'vittori'),
+(41, 'fabio', 'corrarella'),
+(42, 'lorenzo', 'petrucci'),
+(43, 'giacomo', 'marcucci'),
+(44, 'nicolò', 'scortechini'),
+(45, 'pietro', 'quattrini'),
+(46, 'nicola', 'cardinaletti'),
+(47, 'lorenzo', 'bianchi'),
+(48, 'leonardo', 'rossi'),
+(49, 'lorenzo', 'bonzì'),
+(50, 'giovanni', 'fabrizi'),
+(51, 'andrea', 'giorgini'),
+(52, 'diego', 'stanziano'),
+(53, 'nicole', 'giovagnoli'),
+(54, 'jennifer', 'campana'),
+(55, 'sergio', 'massaccesi'),
+(56, 'davide', 'pacetti'),
+(57, 'greta', 'pinti'),
+(58, 'anna', 'boria'),
+(59, 'nicolò', 'pierangeli'),
+(60, 'alessandro', 'cacciamani'),
+(61, 'luca', 'sabbatini'),
+(62, 'matteo', 'pastori'),
+(63, 'michele', 'ciampichetti'),
+(64, 'edoardo', 'borra'),
+(65, 'leonida', 'salja'),
+(66, 'kristian', 'zimbardo'),
+(67, 'francesco', 'coltorti'),
+(68, 'mattia', 'maggiori'),
+(69, 'gioele', 'barbini'),
+(70, 'loris', 'boccolini'),
+(71, 'tommaso', 'bastari'),
+(72, 'corrado', 'morchio'),
+(73, 'leonardo', 'felici'),
+(74, 'mattia', 'mezzelani'),
+(75, 'leonardo', 'scortichini'),
+(76, 'leonardo', 'matteucci');
 
 --
 -- Indici per le tabelle scaricate
@@ -72,15 +94,6 @@ ALTER TABLE `giocatori`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indici per le tabelle `squadre`
---
-ALTER TABLE `squadre`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `nome` (`nome`),
-  ADD KEY `squadre_ibfk_1` (`giocatore1_id`),
-  ADD KEY `squadre_ibfk_2` (`giocatore2_id`);
-
---
 -- AUTO_INCREMENT per le tabelle scaricate
 --
 
@@ -88,24 +101,7 @@ ALTER TABLE `squadre`
 -- AUTO_INCREMENT per la tabella `giocatori`
 --
 ALTER TABLE `giocatori`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
-
---
--- AUTO_INCREMENT per la tabella `squadre`
---
-ALTER TABLE `squadre`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
-
---
--- Limiti per le tabelle scaricate
---
-
---
--- Limiti per la tabella `squadre`
---
-ALTER TABLE `squadre`
-  ADD CONSTRAINT `squadre_ibfk_1` FOREIGN KEY (`giocatore1_id`) REFERENCES `giocatori` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `squadre_ibfk_2` FOREIGN KEY (`giocatore2_id`) REFERENCES `giocatori` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

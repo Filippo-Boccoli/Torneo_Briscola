@@ -101,8 +101,9 @@
             this.cbSquadra1.FormattingEnabled = true;
             this.cbSquadra1.Location = new System.Drawing.Point(13, 13);
             this.cbSquadra1.Name = "cbSquadra1";
-            this.cbSquadra1.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra1.Size = new System.Drawing.Size(136, 31);
             this.cbSquadra1.TabIndex = 0;
+            this.cbSquadra1.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra2
             // 
@@ -110,8 +111,9 @@
             this.cbSquadra2.FormattingEnabled = true;
             this.cbSquadra2.Location = new System.Drawing.Point(13, 45);
             this.cbSquadra2.Name = "cbSquadra2";
-            this.cbSquadra2.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra2.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra2.TabIndex = 1;
+            this.cbSquadra2.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra4
             // 
@@ -119,8 +121,9 @@
             this.cbSquadra4.FormattingEnabled = true;
             this.cbSquadra4.Location = new System.Drawing.Point(13, 126);
             this.cbSquadra4.Name = "cbSquadra4";
-            this.cbSquadra4.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra4.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra4.TabIndex = 3;
+            this.cbSquadra4.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra3
             // 
@@ -128,8 +131,9 @@
             this.cbSquadra3.FormattingEnabled = true;
             this.cbSquadra3.Location = new System.Drawing.Point(13, 94);
             this.cbSquadra3.Name = "cbSquadra3";
-            this.cbSquadra3.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra3.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra3.TabIndex = 2;
+            this.cbSquadra3.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra8
             // 
@@ -137,8 +141,9 @@
             this.cbSquadra8.FormattingEnabled = true;
             this.cbSquadra8.Location = new System.Drawing.Point(13, 292);
             this.cbSquadra8.Name = "cbSquadra8";
-            this.cbSquadra8.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra8.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra8.TabIndex = 7;
+            this.cbSquadra8.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra7
             // 
@@ -146,8 +151,9 @@
             this.cbSquadra7.FormattingEnabled = true;
             this.cbSquadra7.Location = new System.Drawing.Point(13, 260);
             this.cbSquadra7.Name = "cbSquadra7";
-            this.cbSquadra7.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra7.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra7.TabIndex = 6;
+            this.cbSquadra7.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra6
             // 
@@ -155,8 +161,9 @@
             this.cbSquadra6.FormattingEnabled = true;
             this.cbSquadra6.Location = new System.Drawing.Point(13, 211);
             this.cbSquadra6.Name = "cbSquadra6";
-            this.cbSquadra6.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra6.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra6.TabIndex = 5;
+            this.cbSquadra6.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra5
             // 
@@ -164,8 +171,9 @@
             this.cbSquadra5.FormattingEnabled = true;
             this.cbSquadra5.Location = new System.Drawing.Point(13, 179);
             this.cbSquadra5.Name = "cbSquadra5";
-            this.cbSquadra5.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra5.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra5.TabIndex = 4;
+            this.cbSquadra5.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra16
             // 
@@ -173,8 +181,9 @@
             this.cbSquadra16.FormattingEnabled = true;
             this.cbSquadra16.Location = new System.Drawing.Point(13, 619);
             this.cbSquadra16.Name = "cbSquadra16";
-            this.cbSquadra16.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra16.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra16.TabIndex = 15;
+            this.cbSquadra16.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra15
             // 
@@ -182,8 +191,9 @@
             this.cbSquadra15.FormattingEnabled = true;
             this.cbSquadra15.Location = new System.Drawing.Point(13, 587);
             this.cbSquadra15.Name = "cbSquadra15";
-            this.cbSquadra15.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra15.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra15.TabIndex = 14;
+            this.cbSquadra15.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra14
             // 
@@ -191,8 +201,9 @@
             this.cbSquadra14.FormattingEnabled = true;
             this.cbSquadra14.Location = new System.Drawing.Point(13, 538);
             this.cbSquadra14.Name = "cbSquadra14";
-            this.cbSquadra14.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra14.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra14.TabIndex = 13;
+            this.cbSquadra14.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra13
             // 
@@ -200,8 +211,9 @@
             this.cbSquadra13.FormattingEnabled = true;
             this.cbSquadra13.Location = new System.Drawing.Point(13, 506);
             this.cbSquadra13.Name = "cbSquadra13";
-            this.cbSquadra13.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra13.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra13.TabIndex = 12;
+            this.cbSquadra13.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra12
             // 
@@ -209,8 +221,9 @@
             this.cbSquadra12.FormattingEnabled = true;
             this.cbSquadra12.Location = new System.Drawing.Point(13, 453);
             this.cbSquadra12.Name = "cbSquadra12";
-            this.cbSquadra12.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra12.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra12.TabIndex = 11;
+            this.cbSquadra12.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra11
             // 
@@ -218,8 +231,9 @@
             this.cbSquadra11.FormattingEnabled = true;
             this.cbSquadra11.Location = new System.Drawing.Point(13, 421);
             this.cbSquadra11.Name = "cbSquadra11";
-            this.cbSquadra11.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra11.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra11.TabIndex = 10;
+            this.cbSquadra11.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra10
             // 
@@ -227,8 +241,9 @@
             this.cbSquadra10.FormattingEnabled = true;
             this.cbSquadra10.Location = new System.Drawing.Point(13, 372);
             this.cbSquadra10.Name = "cbSquadra10";
-            this.cbSquadra10.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra10.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra10.TabIndex = 9;
+            this.cbSquadra10.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra9
             // 
@@ -236,44 +251,49 @@
             this.cbSquadra9.FormattingEnabled = true;
             this.cbSquadra9.Location = new System.Drawing.Point(13, 340);
             this.cbSquadra9.Name = "cbSquadra9";
-            this.cbSquadra9.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra9.Size = new System.Drawing.Size(137, 31);
             this.cbSquadra9.TabIndex = 8;
+            this.cbSquadra9.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra31
             // 
             this.cbSquadra31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra31.FormattingEnabled = true;
-            this.cbSquadra31.Location = new System.Drawing.Point(1387, 587);
+            this.cbSquadra31.Location = new System.Drawing.Point(1360, 587);
             this.cbSquadra31.Name = "cbSquadra31";
-            this.cbSquadra31.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra31.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra31.TabIndex = 31;
+            this.cbSquadra31.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra30
             // 
             this.cbSquadra30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra30.FormattingEnabled = true;
-            this.cbSquadra30.Location = new System.Drawing.Point(1387, 538);
+            this.cbSquadra30.Location = new System.Drawing.Point(1360, 538);
             this.cbSquadra30.Name = "cbSquadra30";
-            this.cbSquadra30.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra30.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra30.TabIndex = 30;
+            this.cbSquadra30.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra29
             // 
             this.cbSquadra29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra29.FormattingEnabled = true;
-            this.cbSquadra29.Location = new System.Drawing.Point(1387, 506);
+            this.cbSquadra29.Location = new System.Drawing.Point(1360, 506);
             this.cbSquadra29.Name = "cbSquadra29";
-            this.cbSquadra29.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra29.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra29.TabIndex = 29;
+            this.cbSquadra29.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra28
             // 
             this.cbSquadra28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra28.FormattingEnabled = true;
-            this.cbSquadra28.Location = new System.Drawing.Point(1387, 452);
+            this.cbSquadra28.Location = new System.Drawing.Point(1360, 452);
             this.cbSquadra28.Name = "cbSquadra28";
-            this.cbSquadra28.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra28.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra28.TabIndex = 28;
+            this.cbSquadra28.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra3_4
             // 
@@ -289,100 +309,111 @@
             // 
             this.cbSquadra27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra27.FormattingEnabled = true;
-            this.cbSquadra27.Location = new System.Drawing.Point(1387, 420);
+            this.cbSquadra27.Location = new System.Drawing.Point(1360, 420);
             this.cbSquadra27.Name = "cbSquadra27";
-            this.cbSquadra27.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra27.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra27.TabIndex = 26;
+            this.cbSquadra27.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra26
             // 
             this.cbSquadra26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra26.FormattingEnabled = true;
-            this.cbSquadra26.Location = new System.Drawing.Point(1387, 371);
+            this.cbSquadra26.Location = new System.Drawing.Point(1360, 371);
             this.cbSquadra26.Name = "cbSquadra26";
-            this.cbSquadra26.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra26.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra26.TabIndex = 25;
+            this.cbSquadra26.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra25
             // 
             this.cbSquadra25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra25.FormattingEnabled = true;
-            this.cbSquadra25.Location = new System.Drawing.Point(1387, 339);
+            this.cbSquadra25.Location = new System.Drawing.Point(1360, 339);
             this.cbSquadra25.Name = "cbSquadra25";
-            this.cbSquadra25.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra25.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra25.TabIndex = 24;
+            this.cbSquadra25.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra24
             // 
             this.cbSquadra24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra24.FormattingEnabled = true;
-            this.cbSquadra24.Location = new System.Drawing.Point(1387, 291);
+            this.cbSquadra24.Location = new System.Drawing.Point(1360, 291);
             this.cbSquadra24.Name = "cbSquadra24";
-            this.cbSquadra24.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra24.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra24.TabIndex = 23;
+            this.cbSquadra24.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra23
             // 
             this.cbSquadra23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra23.FormattingEnabled = true;
-            this.cbSquadra23.Location = new System.Drawing.Point(1387, 259);
+            this.cbSquadra23.Location = new System.Drawing.Point(1360, 259);
             this.cbSquadra23.Name = "cbSquadra23";
-            this.cbSquadra23.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra23.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra23.TabIndex = 22;
+            this.cbSquadra23.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra22
             // 
             this.cbSquadra22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra22.FormattingEnabled = true;
-            this.cbSquadra22.Location = new System.Drawing.Point(1387, 210);
+            this.cbSquadra22.Location = new System.Drawing.Point(1360, 210);
             this.cbSquadra22.Name = "cbSquadra22";
-            this.cbSquadra22.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra22.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra22.TabIndex = 21;
+            this.cbSquadra22.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra21
             // 
             this.cbSquadra21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra21.FormattingEnabled = true;
-            this.cbSquadra21.Location = new System.Drawing.Point(1387, 178);
+            this.cbSquadra21.Location = new System.Drawing.Point(1360, 178);
             this.cbSquadra21.Name = "cbSquadra21";
-            this.cbSquadra21.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra21.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra21.TabIndex = 20;
+            this.cbSquadra21.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra20
             // 
             this.cbSquadra20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra20.FormattingEnabled = true;
-            this.cbSquadra20.Location = new System.Drawing.Point(1387, 125);
+            this.cbSquadra20.Location = new System.Drawing.Point(1360, 125);
             this.cbSquadra20.Name = "cbSquadra20";
-            this.cbSquadra20.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra20.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra20.TabIndex = 19;
+            this.cbSquadra20.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra19
             // 
             this.cbSquadra19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra19.FormattingEnabled = true;
-            this.cbSquadra19.Location = new System.Drawing.Point(1387, 93);
+            this.cbSquadra19.Location = new System.Drawing.Point(1360, 93);
             this.cbSquadra19.Name = "cbSquadra19";
-            this.cbSquadra19.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra19.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra19.TabIndex = 18;
+            this.cbSquadra19.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra18
             // 
             this.cbSquadra18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra18.FormattingEnabled = true;
-            this.cbSquadra18.Location = new System.Drawing.Point(1387, 44);
+            this.cbSquadra18.Location = new System.Drawing.Point(1360, 44);
             this.cbSquadra18.Name = "cbSquadra18";
-            this.cbSquadra18.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra18.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra18.TabIndex = 17;
+            this.cbSquadra18.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra17
             // 
             this.cbSquadra17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra17.FormattingEnabled = true;
-            this.cbSquadra17.Location = new System.Drawing.Point(1387, 12);
+            this.cbSquadra17.Location = new System.Drawing.Point(1360, 12);
             this.cbSquadra17.Name = "cbSquadra17";
-            this.cbSquadra17.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra17.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra17.TabIndex = 16;
+            this.cbSquadra17.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra1_1
             // 
@@ -568,7 +599,7 @@
             // 
             this.cbSquadra2_4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra2_4.FormattingEnabled = true;
-            this.cbSquadra2_4.Location = new System.Drawing.Point(284, 561);
+            this.cbSquadra2_4.Location = new System.Drawing.Point(296, 561);
             this.cbSquadra2_4.Name = "cbSquadra2_4";
             this.cbSquadra2_4.Size = new System.Drawing.Size(121, 31);
             this.cbSquadra2_4.TabIndex = 51;
@@ -638,10 +669,11 @@
             // 
             this.cbSquadra32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSquadra32.FormattingEnabled = true;
-            this.cbSquadra32.Location = new System.Drawing.Point(1387, 619);
+            this.cbSquadra32.Location = new System.Drawing.Point(1360, 619);
             this.cbSquadra32.Name = "cbSquadra32";
-            this.cbSquadra32.Size = new System.Drawing.Size(121, 31);
+            this.cbSquadra32.Size = new System.Drawing.Size(148, 31);
             this.cbSquadra32.TabIndex = 58;
+            this.cbSquadra32.SelectedIndexChanged += new System.EventHandler(this.cbSquadra_SelectedIndexChanged);
             // 
             // cbSquadra3_2
             // 
@@ -703,7 +735,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1514, 652);
+            this.ClientSize = new System.Drawing.Size(1530, 652);
             this.Controls.Add(this.cbVincitore);
             this.Controls.Add(this.cbSquadra4_2);
             this.Controls.Add(this.cbSquadra4_1);
