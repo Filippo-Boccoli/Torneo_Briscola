@@ -116,5 +116,16 @@ namespace Torneo_Briscola
         {
             popolaListView();
         }
+
+        private void btAnnulla_Click(object sender, EventArgs e)
+        {
+            unSetAll();
+        }
+
+        private void btGestisciTorneo_Click(object sender, EventArgs e)
+        {
+            FrmTorneo frmTorneo = new FrmTorneo();
+            frmTorneo.Show();
+        }
     }
 }
